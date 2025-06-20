@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.4/dist/index.min.js"></script>
+</head>
+  <body class="image-bg-body">
+    <div class="chat-container" id="chatContainer">
+      <div class="chat-header">
+        <img id="chat-avatar" src="" alt="Avatar">
+        <span id="chat-username"></span>
+        <button id="toggle-theme" style="margin-left:auto;">🌓</button>
+      </div>
+      <div class="messages" id="messages"></div>
+      <form id="chat-form">
+        <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" />
+        <span class="emoji-picker-icon" style="cursor:pointer;">😊</span>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+  
+</body>
+</html>
